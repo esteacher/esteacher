@@ -1,0 +1,7 @@
+import pandas as pd
+TyPhoon = ['da','rum','bary','tte','hhd']
+Pr = [968, 980, 965, 970, 973]
+Wind = [1, 5, 25, 13, 33]
+
+TyDataSet = list(zip(TyPhoon,Pr))
+df = pd.DataFrame(data = TyDataSet, columns=['TyPhoon', 'Pr'])
