@@ -1,0 +1,15 @@
+import Adafruit_BMP.BMP085 as BMP085
+
+
+sensor = BMP085.BMP085()
+
+temp = sensor.read_temperature()
+pressure = sensor.read_pressure()
+
+
+temp2 = temp*0.1
+pressure2 = pressure*0.01
+
+print('Temp = {0:0.2f} *C'.format(temp2))
+print('Pressure = {0:0.2f} Pa'.format(pressure2))
+
